@@ -52,216 +52,214 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: Container(
-        margin: EdgeInsets.all(10.0),
+        margin: const EdgeInsets.all(10.0),
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: screenHeight*0.7,
               child: SingleChildScrollView(
-                child: Container(
-                  child: Column(
-                    children: [
-                      SizedBox(height: 20,),
-                      GestureDetector(
-                        onTap: (){
-                          //Handle the click event
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewTask()),);
-                        },
+                child: Column(
+                  children: [
+                    const SizedBox(height: 20,),
+                    GestureDetector(
+                      onTap: (){
+                        //Handle the click event
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ViewTask()),);
+                      },
+                      child: Container(
+                        height: 100,
+                        width: screenWidth,
+                        color: Colors.amber,
                         child: Container(
-                          height: 100,
-                          width: screenWidth,
-                          color: Colors.amber,
-                          child: Container(
-                            margin: EdgeInsets.all(7.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
-                                Text('Conduct user interviews or surveys to understand user needs and preferences.'),
-                                LinearProgressIndicator(
-                                  value: 0.8,
-                                  backgroundColor: Colors.grey[300],
-                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                                ),
-                              ],
-                            ),
-                            ),
-                        ),
+                          margin: const EdgeInsets.all(7.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
+                              const Text('Conduct user interviews or surveys to understand user needs and preferences.'),
+                              LinearProgressIndicator(
+                                value: 0.8,
+                                backgroundColor: Colors.grey[300],
+                                valueColor: const AlwaysStoppedAnimation<Color>(Colors.blue),
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      SizedBox(height: 20,),
-                      GestureDetector(
-                        onTap: () {
-                          //Handle the click event
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewTask()),);
-                        },
+                    ),
+                    const SizedBox(height: 20,),
+                    GestureDetector(
+                      onTap: () {
+                        //Handle the click event
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ViewTask()),);
+                      },
+                      child: Container(
+                        height: 100,
+                        width: screenWidth,
+                        color: Colors.amber,
                         child: Container(
-                          height: 100,
-                          width: screenWidth,
-                          color: Colors.amber,
-                          child: Container(
-                            margin: EdgeInsets.all(7.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
-                                Text('Conduct user interviews or surveys to understand user needs and preferences.'),
-                                LinearProgressIndicator(
-                                  value: 0.3,
-                                  backgroundColor: Colors.grey[300],
-                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                                ),
-                              ],
-                            ),
-                            ),
-                        ),
+                          margin: const EdgeInsets.all(7.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
+                              const Text('Conduct user interviews or surveys to understand user needs and preferences.'),
+                              LinearProgressIndicator(
+                                value: 0.3,
+                                backgroundColor: Colors.grey[300],
+                                valueColor: const AlwaysStoppedAnimation<Color>(Colors.blue),
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      SizedBox(height: 20,),
-                      GestureDetector(
-                        onTap: () {
-                          //Handle the click event
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewTask()),);
-                        },
+                    ),
+                    const SizedBox(height: 20,),
+                    GestureDetector(
+                      onTap: () {
+                        //Handle the click event
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ViewTask()),);
+                      },
+                      child: Container(
+                        height: 100,
+                        width: screenWidth,
+                        color: Colors.amber,
                         child: Container(
-                          height: 100,
-                          width: screenWidth,
-                          color: Colors.amber,
-                          child: Container(
-                            margin: EdgeInsets.all(7.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
-                                Text('Conduct user interviews or surveys to understand user needs and preferences.'),
-                                LinearProgressIndicator(
-                                  value: 0.8,
-                                  backgroundColor: Colors.grey[300],
-                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                                ),
-                              ],
-                            ),
-                            ),
-                        ),
+                          margin: const EdgeInsets.all(7.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
+                              const Text('Conduct user interviews or surveys to understand user needs and preferences.'),
+                              LinearProgressIndicator(
+                                value: 0.8,
+                                backgroundColor: Colors.grey[300],
+                                valueColor: const AlwaysStoppedAnimation<Color>(Colors.blue),
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      SizedBox(height: 20,),
-                      GestureDetector(
-                        onTap: () {
-                          //Handle the click event
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewTask()),);
-                        },
+                    ),
+                    const SizedBox(height: 20,),
+                    GestureDetector(
+                      onTap: () {
+                        //Handle the click event
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ViewTask()),);
+                      },
+                      child: Container(
+                        height: 100,
+                        width: screenWidth,
+                        color: Colors.amber,
                         child: Container(
-                          height: 100,
-                          width: screenWidth,
-                          color: Colors.amber,
-                          child: Container(
-                            margin: EdgeInsets.all(7.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
-                                Text('Conduct user interviews or surveys to understand user needs and preferences.'),
-                                LinearProgressIndicator(
-                                  value: 0.8,
-                                  backgroundColor: Colors.grey[300],
-                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                                ),
-                              ],
-                            ),
-                            ),
-                        ),
+                          margin: const EdgeInsets.all(7.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
+                              const Text('Conduct user interviews or surveys to understand user needs and preferences.'),
+                              LinearProgressIndicator(
+                                value: 0.8,
+                                backgroundColor: Colors.grey[300],
+                                valueColor: const AlwaysStoppedAnimation<Color>(Colors.blue),
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      SizedBox(height: 20,),
-                      GestureDetector(
-                        onTap: () {
-                          //Handle the click event
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewTask()),);
-                        },
+                    ),
+                    const SizedBox(height: 20,),
+                    GestureDetector(
+                      onTap: () {
+                        //Handle the click event
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ViewTask()),);
+                      },
+                      child: Container(
+                        height: 100,
+                        width: screenWidth,
+                        color: Colors.amber,
                         child: Container(
-                          height: 100,
-                          width: screenWidth,
-                          color: Colors.amber,
-                          child: Container(
-                            margin: EdgeInsets.all(7.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
-                                Text('Conduct user interviews or surveys to understand user needs and preferences.'),
-                                LinearProgressIndicator(
-                                  value: 0.8,
-                                  backgroundColor: Colors.grey[300],
-                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                                ),
-                              ],
-                            ),
-                            ),
-                        ),
+                          margin: const EdgeInsets.all(7.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
+                              const Text('Conduct user interviews or surveys to understand user needs and preferences.'),
+                              LinearProgressIndicator(
+                                value: 0.8,
+                                backgroundColor: Colors.grey[300],
+                                valueColor: const AlwaysStoppedAnimation<Color>(Colors.blue),
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      SizedBox(height: 20,),
-                      GestureDetector(
-                        onTap: () {
-                          //Handle the click event
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewTask()),);
-                        },
+                    ),
+                    const SizedBox(height: 20,),
+                    GestureDetector(
+                      onTap: () {
+                        //Handle the click event
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ViewTask()),);
+                      },
+                      child: Container(
+                        height: 100,
+                        width: screenWidth,
+                        color: Colors.amber,
                         child: Container(
-                          height: 100,
-                          width: screenWidth,
-                          color: Colors.amber,
-                          child: Container(
-                            margin: EdgeInsets.all(7.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
-                                Text('Conduct user interviews or surveys to understand user needs and preferences.'),
-                                LinearProgressIndicator(
-                                  value: 0.8,
-                                  backgroundColor: Colors.grey[300],
-                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                                ),
-                              ],
-                            ),
-                            ),
-                        ),
+                          margin: const EdgeInsets.all(7.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
+                              const Text('Conduct user interviews or surveys to understand user needs and preferences.'),
+                              LinearProgressIndicator(
+                                value: 0.8,
+                                backgroundColor: Colors.grey[300],
+                                valueColor: const AlwaysStoppedAnimation<Color>(Colors.blue),
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      SizedBox(height: 20,),
-                      GestureDetector(
-                        onTap: () {
-                          //Handle the click event
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewTask()),);
-                        },
+                    ),
+                    const SizedBox(height: 20,),
+                    GestureDetector(
+                      onTap: () {
+                        //Handle the click event
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ViewTask()),);
+                      },
+                      child: Container(
+                        height: 100,
+                        width: screenWidth,
+                        color: Colors.amber,
                         child: Container(
-                          height: 100,
-                          width: screenWidth,
-                          color: Colors.amber,
-                          child: Container(
-                            margin: EdgeInsets.all(7.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
-                                Text('Conduct user interviews or surveys to understand user needs and preferences.'),
-                                LinearProgressIndicator(
-                                  value: 0.8,
-                                  backgroundColor: Colors.grey[300],
-                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                                ),
-                              ],
-                            ),
-                            ),
-                        ),
+                          margin: const EdgeInsets.all(7.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('User Research',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),textAlign: TextAlign.start,),
+                              const Text('Conduct user interviews or surveys to understand user needs and preferences.'),
+                              LinearProgressIndicator(
+                                value: 0.8,
+                                backgroundColor: Colors.grey[300],
+                                valueColor: const AlwaysStoppedAnimation<Color>(Colors.blue),
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
-            SizedBox(height: 40,),
+            const SizedBox(height: 40,),
             Positioned(
               child: ElevatedButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>AddTask()),);
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const AddTask()),);
                 },
-                child: Text('Add a New Task'),
+                child: const Text('Add a New Task'),
               ),
             )
           ],
