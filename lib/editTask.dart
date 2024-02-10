@@ -35,7 +35,7 @@ class _EditTaskState extends State<EditTask> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           "Edit Task",
           style: TextStyle(
             color: Colors.white,
@@ -44,7 +44,7 @@ class _EditTaskState extends State<EditTask> {
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
         child: Form(
           key:_formKey,
           child: Column(
@@ -52,7 +52,7 @@ class _EditTaskState extends State<EditTask> {
             children: [
               TextFormField(
                 controller: nameController,
-                decoration: InputDecoration(labelText: "Task Name:"),
+                decoration: const InputDecoration(labelText: "Task Name:"),
                 validator: (value){
                   if(value==null || value.isEmpty) {
                     return "Please enter the task name";
@@ -62,7 +62,7 @@ class _EditTaskState extends State<EditTask> {
               ),
               TextFormField(
                 controller: descriptionController,
-                decoration: InputDecoration(labelText: "Description:"),
+                decoration: const InputDecoration(labelText: "Description:"),
                 validator: (value){
                   if(value==null || value.isEmpty) {
                     return "Please enter description";
@@ -74,7 +74,7 @@ class _EditTaskState extends State<EditTask> {
                 decoration: InputDecoration(
                   labelText: "Due Date:",
                   suffixIcon: IconButton(
-                    icon: Icon(Icons.calendar_today),
+                    icon: const Icon(Icons.calendar_today),
                     onPressed: ()=> _selectdate(context),
                   )
                 ),
@@ -92,7 +92,7 @@ class _EditTaskState extends State<EditTask> {
               ),
               TextFormField(
                 controller: statusController,
-                decoration: InputDecoration(labelText: "Completion Status:"),
+                decoration: const InputDecoration(labelText: "Completion Status:"),
                 validator: (value){
                   if(value==null || value.isEmpty) {
                     return "Please enter value";
@@ -100,24 +100,22 @@ class _EditTaskState extends State<EditTask> {
                   return null;
                 },
               ),
-              SizedBox(height: 20,),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    ElevatedButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyHomePage(title: 'Task Management App',)),);
-                    }, child: Text("Task List"),),
-                    ElevatedButton(onPressed: (){
-                    // validate the form before submitting
-                    if(_formKey.currentState?.validate() ?? false) {
-                      // Form  is valid, perform your action
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyHomePage(title: 'Task Management App',)),);
-                    }
-                    }, child: Text("Save"),
-                    ),
-                  ]
-                ),
+              const SizedBox(height: 20,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  ElevatedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyHomePage(title: 'Task Management App',)),);
+                  }, child: const Text("Task List"),),
+                  ElevatedButton(onPressed: (){
+                  // validate the form before submitting
+                  if(_formKey.currentState?.validate() ?? false) {
+                    // Form  is valid, perform your action
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyHomePage(title: 'Task Management App',)),);
+                  }
+                  }, child: const Text("Save"),
+                  ),
+                ]
               ),
             ],
           ),

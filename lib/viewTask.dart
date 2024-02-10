@@ -10,7 +10,7 @@ class ViewTask extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           "User Research",
           style: TextStyle(
             color: Colors.white,
@@ -22,9 +22,9 @@ class ViewTask extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.all(10.0),
+            margin: const EdgeInsets.all(10.0),
             child: RichText(
-              text: TextSpan(
+              text: const TextSpan(
                 children: [
                   TextSpan(
                     text: "Name:",
@@ -94,21 +94,19 @@ class ViewTask extends StatelessWidget {
               ),
               ),
           ),
-          Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const EditTask()));
-                }, child: Text("Edit"),),
-                ElevatedButton(onPressed: (){
-                  
-                }, child: Text("Delete")),
-                ElevatedButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyHomePage(title: 'Task Management App',)),);
-                }, child: Text("Task List"))
-              ],
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const EditTask()));
+              }, child: const Text("Edit"),),
+              ElevatedButton(onPressed: (){
+                
+              }, child: const Text("Delete")),
+              ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyHomePage(title: 'Task Management App',)),);
+              }, child: const Text("Task List"))
+            ],
           )
         ],
       ),
